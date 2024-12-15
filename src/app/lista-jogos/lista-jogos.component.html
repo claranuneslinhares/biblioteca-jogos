@@ -1,1 +1,20 @@
-<p>lista-jogos works!</p>
+<div>
+    <h2>Lista de Jogos</h2>
+    <ul>
+      <li *ngFor="let jogo of jogos">
+        {{ jogo.titulo }} - {{ jogo.exibirRegras() }}
+        <button (click)="removerJogo(jogo.titulo)">Remover</button>
+      </li>
+    </ul>
+  
+    <h3>Adicionar Novo Jogo</h3>
+    <input #titulo type="text" placeholder="Título">
+    <input #ano type="number" placeholder="Ano de Publicação">
+    <input #fabricante type="text" placeholder="Fabricante">
+    <select #tipo>
+      <option value="tabuleiro">Tabuleiro</option>
+      <option value="carta">Carta</option>
+    </select>
+    <button (click)="adicionarJogo(titulo.value, ano.value, fabricante.value, tipo.value)">Adicionar Jogo</button>
+  </div>
+  
