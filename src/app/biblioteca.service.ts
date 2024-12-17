@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { JogoTabuleiro } from '../models/jogo-tabuleiro.model';
-import { JogoCarta } from '../models/jogo-carta.model';
-import { Biblioteca } from '../models/biblioteca.model';
+import { JogoTabuleiro } from './models/jogo-tabuleiro.model';
+import { JogoCarta } from './models/jogo-carta.model';
+import { Biblioteca } from './models/biblioteca.model';
 
 @Injectable({
   providedIn: 'root'
